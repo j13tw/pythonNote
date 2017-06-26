@@ -4,7 +4,9 @@
 
 ---
 
-H4len\( \) 以一個int物件傳回資料項的長度
+群集資料型態
+
+len\( \) 以一個int物件傳回資料項的長度
 
 &gt;&gt;&gt;len\(\(“one”,\)\)
 
@@ -17,8 +19,6 @@ H4len\( \) 以一個int物件傳回資料項的長度
 &gt;&gt;&gt; len\("automatically”\)
 
 13
-
----
 
 list型態 有個append\(\)方法，可以將一個物件附加至一個清單
 
@@ -53,6 +53,106 @@ python 的 索引是從 0 開始
 \['zebra', 'forty nine', -897, 'arrvark', 200, 'more’\]
 
 ---
+
+雖然a與b是不同的物件\(具有不同的身份\)，但他們有相同的值，
+
+所以他們是相等的。
+
+&gt;&gt;&gt; a = "many paths"
+
+&gt;&gt;&gt; b = "many paths"
+
+&gt;&gt;&gt; a is b
+
+False
+
+&gt;&gt;&gt; a == b
+
+True
+
+隸屬運算符
+
+對於序列或群集之類的資料型態，像是字串、清單和位元組，我們可以使使用 in 運算元來測試隸屬關係，使用 not in 來測試無隸屬關係：
+
+&gt;&gt;&gt; P = \(4,"frog",9,-33,9,2\)
+
+&gt;&gt;&gt; 2 in P
+
+True
+
+&gt;&gt;&gt; phrase = "wild SWans by Jung Chang"
+
+&gt;&gt;&gt; "J" in phrase
+
+True
+
+---
+
+邏輯運算符
+
+短路表達式x AND y，事實上等價於條件語句：if x then y else false。短路表達式x OR y，則等價於條件語句：if x then true else y。
+
+&gt;&gt;&gt; five = 5
+
+&gt;&gt;&gt; two = 2
+
+&gt;&gt;&gt; zero = 0
+
+&gt;&gt;&gt; five and two
+
+2
+
+&gt;&gt;&gt; two and five
+
+5
+
+&gt;&gt;&gt; five and zero
+
+0
+
+&gt;&gt;&gt; five or two
+
+5
+
+&gt;&gt;&gt; two or five
+
+2
+
+&gt;&gt;&gt; zero or five
+
+5
+
+&gt;&gt;&gt; 5 \| 3
+
+7
+
+&gt;&gt;&gt; 2&1
+
+0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
