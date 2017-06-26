@@ -4,7 +4,7 @@
 
 ---
 
-群集資料型態
+&lt;h3&gt;群集資料型態&lt;/h3&gt;
 
 &lt;p&gt;len\( \) 以一個int物件傳回資料項的長度
 
@@ -138,15 +138,19 @@ if 陳述句
 
 if lines &lt;1000:
 
-    print\("small"\)
+```
+print\("small"\)
+```
 
 elif lines &lt;10000:
 
-    print\("medium"\)
+```
+print\("medium"\)
+```
 
 else:
 
-   print\("large"\)
+print\("large"\)
 
 ---
 
@@ -154,7 +158,9 @@ for...in陳述句
 
 &gt;&gt;&gt; for country in \["Denmark","Finland","Norway","Sweden"\]:
 
-    print\(country\)
+```
+print\(country\)
+```
 
 Denmark
 
@@ -164,19 +170,17 @@ Norway
 
 Sweden
 
-
-
-
-
 &gt;&gt;&gt; for letter in "ABCDEFGHIJKLMNOPQRSTUVWXYZ":
 
-           if letter in "AEIOU":
+```
+       if letter in "AEIOU":
 
-               print\(letter,"is vowel"\)
+           print\(letter,"is vowel"\)
 
-          else:
+      else:
 
-              print\(letter,"is a consonant"\)
+          print\(letter,"is a consonant"\)
+```
 
 A is vowel
 
@@ -236,17 +240,19 @@ Z is a consonant
 
 &gt;&gt;&gt; def get\_int\(msg\):
 
-    while True:
+```
+while True:
 
-        try:
+    try:
 
-            i=int\(input\(msg\)\)
+        i=int\(input\(msg\)\)
 
-            return i
+        return i
 
-        except ValueError as err:
+    except ValueError as err:
 
-            print\(err\)
+        print\(err\)
+```
 
 &gt;&gt;&gt; get\_int\(3\)
 
@@ -255,14 +261,4 @@ Z is a consonant
 &gt;&gt;&gt; get\_int\(q\)
 
 invalid literal for int\(\) with base 10: 'get\_int\(q\)’
-
- 
-
- 
-
- 
-
- 
-
-
 
