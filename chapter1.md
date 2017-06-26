@@ -6,7 +6,7 @@
 
 群集資料型態
 
-len\( \) 以一個int物件傳回資料項的長度
+&lt;p&gt;len\( \) 以一個int物件傳回資料項的長度
 
 &gt;&gt;&gt;len\(\(“one”,\)\)
 
@@ -50,7 +50,7 @@ python 的 索引是從 0 開始
 
 &gt;&gt;&gt; x
 
-\['zebra', 'forty nine', -897, 'arrvark', 200, 'more’\]
+\['zebra', 'forty nine', -897, 'arrvark', 200, 'more’\] &lt;/p&gt;
 
 ---
 
@@ -130,29 +130,139 @@ True
 
 0
 
+---
+
+if 陳述句
+
+與其他語言不同的是Python使用縮排來表示它的區塊結構。
+
+if lines &lt;1000:
+
+    print\("small"\)
+
+elif lines &lt;10000:
+
+    print\("medium"\)
+
+else:
+
+   print\("large"\)
+
+---
+
+for...in陳述句
+
+&gt;&gt;&gt; for country in \["Denmark","Finland","Norway","Sweden"\]:
+
+    print\(country\)
+
+Denmark
+
+Finland
+
+Norway
+
+Sweden
 
 
 
 
 
+&gt;&gt;&gt; for letter in "ABCDEFGHIJKLMNOPQRSTUVWXYZ":
 
+           if letter in "AEIOU":
 
+               print\(letter,"is vowel"\)
 
+          else:
 
+              print\(letter,"is a consonant"\)
 
+A is vowel
 
+B is a consonant
 
+C is a consonant
 
+D is a consonant
 
+E is vowel
 
+F is a consonant
 
+G is a consonant
 
+H is a consonant
 
+I is vowel
 
+J is a consonant
 
+K is a consonant
 
+L is a consonant
 
+M is a consonant
 
+N is a consonant
+
+O is vowel
+
+P is a consonant
+
+Q is a consonant
+
+R is a consonant
+
+S is a consonant
+
+T is a consonant
+
+U is vowel
+
+V is a consonant
+
+W is a consonant
+
+X is a consonant
+
+Y is a consonant
+
+Z is a consonant
+
+---
+
+函式的建立與呼叫
+
+&gt;&gt;&gt; def get\_int\(msg\):
+
+    while True:
+
+        try:
+
+            i=int\(input\(msg\)\)
+
+            return i
+
+        except ValueError as err:
+
+            print\(err\)
+
+&gt;&gt;&gt; get\_int\(3\)
+
+3
+
+&gt;&gt;&gt; get\_int\(q\)
+
+invalid literal for int\(\) with base 10: 'get\_int\(q\)’
+
+ 
+
+ 
+
+ 
+
+ 
 
 
 
