@@ -136,30 +136,24 @@ if 陳述句
 
 與其他語言不同的是Python使用縮排來表示它的區塊結構。
 
-if lines &lt;1000:
-
-```
-print\("small"\)
-```
-
-elif lines &lt;10000:
-
-```
-print\("medium"\)
-```
-
+```py
+if lines <1000:
+    print\("small"\)
+elif lines <10000:
+    print\("medium"\)
 else:
+    print("large")
+```
 
-print\("large"\)
+
 
 ---
 
 for...in陳述句
 
-for country in \["Denmark","Finland","Norway","Sweden"\]:
-
 ```py
-print\(country\)
+>>>for country in ["Denmark","Finland","Norway","Sweden"]:
+       print\(country\)
 ```
 
 Denmark
@@ -170,9 +164,9 @@ Norway
 
 Sweden
 
-&gt;&gt;&gt; for letter in "ABCDEFGHIJKLMNOPQRSTUVWXYZ":
-
-```
+```py
+>>> for letter in "ABCDEFGHIJKLMNOPQRSTUVWXYZ":    
+       
        if letter in "AEIOU":
 
            print\(letter,"is vowel"\)
@@ -238,20 +232,14 @@ Z is a consonant
 
 函式的建立與呼叫
 
-&gt;&gt;&gt; def get\_int\(msg\):
-
 ```
-while True:
-
-    try:
-
-        i=int\(input\(msg\)\)
-
+>>> def get_int(msg):
+        while True:
+            try:
+                i=int\(input\(msg\)\)
         return i
-
-    except ValueError as err:
-
-        print\(err\)
+        except ValueError as err:
+            print\(err\)
 ```
 
 &gt;&gt;&gt; get\_int\(3\)
