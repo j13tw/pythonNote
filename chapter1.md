@@ -8,6 +8,8 @@
 
 len\( \) 以一個int物件傳回資料項的長度
 
+\`\`\`python
+
 &gt;&gt;&gt;len\(\(“one”,\)\)
 
 1
@@ -19,6 +21,8 @@ len\( \) 以一個int物件傳回資料項的長度
 &gt;&gt;&gt; len\("automatically”\)
 
 13
+
+\`\`\`
 
 list型態 有個append\(\)方法，可以將一個物件附加至一個清單
 
@@ -145,8 +149,6 @@ else:
     print("large")
 ```
 
-
-
 ---
 
 for...in陳述句
@@ -166,7 +168,7 @@ Sweden
 
 ```py
 >>> for letter in "ABCDEFGHIJKLMNOPQRSTUVWXYZ":    
-       
+
        if letter in "AEIOU":
 
            print\(letter,"is vowel"\)
@@ -232,7 +234,7 @@ Z is a consonant
 
 函式的建立與呼叫
 
-```
+```py
 >>> def get_int(msg):
         while True:
             try:
