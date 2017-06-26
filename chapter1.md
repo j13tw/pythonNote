@@ -50,7 +50,7 @@ python 的 索引是從 0 開始
 
 &gt;&gt;&gt; x
 
-\['zebra', 'forty nine', -897, 'arrvark', 200, 'more’\] 
+\['zebra', 'forty nine', -897, 'arrvark', 200, 'more’\]
 
 ---
 
@@ -156,9 +156,9 @@ print\("large"\)
 
 for...in陳述句
 
-&gt;&gt;&gt; for country in \["Denmark","Finland","Norway","Sweden"\]:
+for country in \["Denmark","Finland","Norway","Sweden"\]:
 
-```
+```py
 print\(country\)
 ```
 
