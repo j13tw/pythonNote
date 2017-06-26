@@ -1,3 +1,18 @@
-# First Chapter
+# Python note 
 
-GitBook allows you to organize your book into chapters, each chapter is stored in a separate file like this one.
+# H5群集資料型態
+
+H4 len\( \) 以一個int物件傳回資料項的長度
+
+&gt;&gt;&gt;len\(\(“one”,\)\)
+
+1
+
+&gt;&gt;&gt; len\(“one”\)
+
+3
+
+&gt;&gt;&gt; len\("automatically”\)
+
+13
+
