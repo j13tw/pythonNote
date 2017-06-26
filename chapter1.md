@@ -6,7 +6,7 @@
 
 群集資料型態
 
-&lt;p&gt;len\( \) 以一個int物件傳回資料項的長度
+len\( \) 以一個int物件傳回資料項的長度
 
 &gt;&gt;&gt;len\(\(“one”,\)\)
 
@@ -50,7 +50,7 @@ python 的 索引是從 0 開始
 
 &gt;&gt;&gt; x
 
-\['zebra', 'forty nine', -897, 'arrvark', 200, 'more’\] &lt;/p&gt;
+\['zebra', 'forty nine', -897, 'arrvark', 200, 'more’\] 
 
 ---
 
