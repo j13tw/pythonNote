@@ -8,7 +8,7 @@
 
 len\( \) 以一個int物件傳回資料項的長度
 
-\`python
+\`
 
 &gt;&gt;&gt;len\(\(“one”,\)\)
 
