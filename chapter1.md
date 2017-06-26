@@ -8,21 +8,21 @@
 
 len\( \) 以一個int物件傳回資料項的長度
 
-\`
+\`\`\`
 
-&gt;&gt;&gt;len\(\(“one”,\)\)
+len\(\(“one”,\)\)
 
 1
 
-&gt;&gt;&gt; len\(“one”\)
+ len\(“one”\)
 
 3
 
-&gt;&gt;&gt; len\("automatically”\)
+ len\("automatically”\)
 
 13
 
-\`
+\`\`\`
 
 list型態 有個append\(\)方法，可以將一個物件附加至一個清單
 
