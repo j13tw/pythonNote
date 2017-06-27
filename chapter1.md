@@ -83,19 +83,23 @@ a == b
 
 True
 
+
+
 隸屬運算符
 
 對於序列或群集之類的資料型態，像是字串、清單和位元組，我們可以使使用 in 運算元來測試隸屬關係，使用 not in 來測試無隸屬關係：
 
-&gt;&gt;&gt; P = \(4,"frog",9,-33,9,2\)
-
-&gt;&gt;&gt; 2 in P
+```python
+ P = (4,"frog",9,-33,9,2)
+ 2 in P
+```
 
 True
 
-&gt;&gt;&gt; phrase = "wild SWans by Jung Chang"
-
-&gt;&gt;&gt; "J" in phrase
+```python
+phrase = "wild SWans by Jung Chang"
+"J" in phrase
+```
 
 True
 
