@@ -8,31 +8,33 @@
 
 len\( \) 以一個int物件傳回資料項的長度
 
-\`\`\`
-
-len\(\(“one”,\)\)
+```python
+len((“one”,))
+```
 
 1
 
-len\(“one”\)
+```python
+len(“one”)
+```
 
 3
 
-len\("automatically”\)
+```python
+len("automatically”)
+```
 
 13
-
-\`\`\`
 
 list型態 有個append\(\)方法，可以將一個物件附加至一個清單
 
 就像這樣：
 
-&gt;&gt;&gt; x = \["zebra",49,-897,"arrvark",200\]
-
-&gt;&gt;&gt; x.append\("more"\)
-
-&gt;&gt;&gt; x
+```python
+x = ["zebra",49,-897,"arrvark",200]
+x.append("more")
+x
+```
 
 \['zebra', 49, -897, 'arrvark', 200, 'more’\]
 
@@ -42,17 +44,22 @@ list型態 有 insert\(\) 用於將一個資料項插入被給定的索引位置
 
 python 的 索引是從 0 開始
 
-&gt;&gt;&gt; x
+```python
+x
+```
 
 \['zebra', 49, -897, 'arrvark', 200, 'more’\]
 
-&gt;&gt;&gt; x\[1\]
+```python
+x[1]
+```
 
 49
 
-&gt;&gt;&gt; x\[1\] = "forty nine"
-
-&gt;&gt;&gt; x
+```python
+x[1] = "forty nine"
+x
+```
 
 \['zebra', 'forty nine', -897, 'arrvark', 200, 'more’\]
 
@@ -62,15 +69,17 @@ python 的 索引是從 0 開始
 
 所以他們是相等的。
 
-&gt;&gt;&gt; a = "many paths"
-
-&gt;&gt;&gt; b = "many paths"
-
-&gt;&gt;&gt; a is b
+```python
+a = "many paths"
+b = "many paths"
+a is b
+```
 
 False
 
-&gt;&gt;&gt; a == b
+```python
+a == b
+```
 
 True
 
@@ -96,41 +105,54 @@ True
 
 短路表達式x AND y，事實上等價於條件語句：if x then y else false。短路表達式x OR y，則等價於條件語句：if x then true else y。
 
-&gt;&gt;&gt; five = 5
-
-&gt;&gt;&gt; two = 2
-
-&gt;&gt;&gt; zero = 0
-
-&gt;&gt;&gt; five and two
+```python
+five = 5
+two = 2
+zero = 0
+five and two
+```
 
 2
 
-&gt;&gt;&gt; two and five
+```python
+two and five
+```
 
 5
 
-&gt;&gt;&gt; five and zero
+```python
+five and zero
+```
 
 0
 
-&gt;&gt;&gt; five or two
+```python
+five or two
+```
 
 5
 
-&gt;&gt;&gt; two or five
+```python
+two or five
+```
 
 2
 
-&gt;&gt;&gt; zero or five
+```python
+zero or five
+```
 
 5
 
-&gt;&gt;&gt; 5 \| 3
+```python
+5 | 3
+```
 
 7
 
-&gt;&gt;&gt; 2&1
+```python
+2&1
+```
 
 0
 
@@ -235,7 +257,7 @@ Z is a consonant
 函式的建立與呼叫
 
 ```py
->>> def get_int(msg):
+    def get_int(msg):
         while True:
             try:
                 i=int\(input\(msg\)\)
@@ -244,11 +266,15 @@ Z is a consonant
             print\(err\)
 ```
 
-&gt;&gt;&gt; get\_int\(3\)
+```python
+get_int(3)
+```
 
 3
 
-&gt;&gt;&gt; get\_int\(q\)
+```python
+get_int(q)
+```
 
 invalid literal for int\(\) with base 10: 'get\_int\(q\)’
 
