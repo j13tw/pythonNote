@@ -14,11 +14,11 @@ len\(\(“one”,\)\)
 
 1
 
- len\(“one”\)
+len\(“one”\)
 
 3
 
- len\("automatically”\)
+len\("automatically”\)
 
 13
 
