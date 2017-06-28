@@ -83,8 +83,6 @@ a == b
 
 True
 
-
-
 隸屬運算符
 
 對於序列或群集之類的資料型態，像是字串、清單和位元組，我們可以使使用 in 運算元來測試隸屬關係，使用 not in 來測試無隸屬關係：
@@ -281,4 +279,21 @@ get_int(q)
 ```
 
 invalid literal for int\(\) with base 10: 'get\_int\(q\)’
+
+
+
+計算成績
+
+```python
+grades = [100, 100, 90, 40, 80, 100, 85, 70, 90, 65, 90, 85, 50.5]
+def grades_sum(scores):
+    total = 0
+    for score in scores:
+        total += score
+    print total
+    return total
+grades_sum(grades)
+```
+
+
 
